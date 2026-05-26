@@ -1,0 +1,1 @@
+package com.example.taskmanagement.enums; public enum TaskStatus {TASK,IN_PROGRESS,COMPLETED}
