@@ -1,9 +1,0 @@
-/Users/shovan/Downloads/untitled folder/task-management-backend-part1/src/main/java/com/example/taskmanagement/TaskManagementApplication.java
-/Users/shovan/Downloads/untitled folder/task-management-backend-part1/src/main/java/com/example/taskmanagement/controller/TaskController.java
-/Users/shovan/Downloads/untitled folder/task-management-backend-part1/src/main/java/com/example/taskmanagement/dto/MoveTaskRequest.java
-/Users/shovan/Downloads/untitled folder/task-management-backend-part1/src/main/java/com/example/taskmanagement/entity/Task.java
-/Users/shovan/Downloads/untitled folder/task-management-backend-part1/src/main/java/com/example/taskmanagement/enums/Priority.java
-/Users/shovan/Downloads/untitled folder/task-management-backend-part1/src/main/java/com/example/taskmanagement/enums/TaskStatus.java
-/Users/shovan/Downloads/untitled folder/task-management-backend-part1/src/main/java/com/example/taskmanagement/exception/GlobalExceptionHandler.java
-/Users/shovan/Downloads/untitled folder/task-management-backend-part1/src/main/java/com/example/taskmanagement/repository/TaskRepository.java
-/Users/shovan/Downloads/untitled folder/task-management-backend-part1/src/main/java/com/example/taskmanagement/service/TaskService.java
