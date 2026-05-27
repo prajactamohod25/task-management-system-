@@ -231,3 +231,26 @@ button:disabled {
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 600px) {
+  .board {
+    grid-template-columns: 1fr;
+  }
+}
+  .app-shell {
+    width: 100%;
+    padding: 18px 12px;
+  }
+
+  .task-form {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .column {
+    min-height: auto;
+    padding: 12px;
+  }
+
+  .task-card-header {
+    flex-wrap: wrap;
+  }
