@@ -146,7 +146,6 @@ button:disabled {
   display: grid;
   gap: 12px;
 }
-
 .task-card {
   border: 1px solid #dde3ef;
   border-radius: 8px;
@@ -232,10 +231,6 @@ button:disabled {
   }
 }
 @media (max-width: 600px) {
-  .board {
-    grid-template-columns: 1fr;
-  }
-}
   .app-shell {
     width: 100%;
     padding: 18px 12px;
@@ -246,6 +241,10 @@ button:disabled {
     gap: 10px;
   }
 
+  .board {
+    grid-template-columns: 1fr;
+  }
+
   .column {
     min-height: auto;
     padding: 12px;
@@ -254,3 +253,25 @@ button:disabled {
   .task-card-header {
     flex-wrap: wrap;
   }
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.task-actions button {
+  border: none;
+  border-radius: 8px;
+  background: #2364d2;
+  color: white;
+  padding: 7px 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.task-actions button:hover {
+  opacity: 0.9;
+}
