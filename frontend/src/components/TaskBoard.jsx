@@ -129,22 +129,31 @@ export default function TaskBoard() {
                   {task.description && <p>{task.description}</p>}
                   <div className="task-actions">
   {task.status !== 'TASK' && (
-    <button onClick={() => move(task.id, 'TASK')}>
-      To Do
-    </button>
-  )}
+  <button
+    className="status-button todo-button"
+    onClick={() => move(task.id, 'TASK')}
+  >
+    To Do
+  </button>
+)}
 
-  {task.status !== 'IN_PROGRESS' && (
-    <button onClick={() => move(task.id, 'IN_PROGRESS')}>
-      In Progress
-    </button>
-  )}
+{task.status !== 'IN_PROGRESS' && (
+  <button
+    className="status-button progress-button"
+    onClick={() => move(task.id, 'IN_PROGRESS')}
+  >
+   In Progress
+  </button>
+)}
 
-  {task.status !== 'COMPLETED' && (
-    <button onClick={() => move(task.id, 'COMPLETED')}>
-      Complete
-    </button>
-  )}
+{task.status !== 'COMPLETED' && (
+  <button
+    className="status-button complete-button"
+    onClick={() => move(task.id, 'COMPLETED')}
+  >
+    Complete
+  </button>
+)}
 </div>
                   {task.totalSeconds != null && (
                     <div className="duration">Completed in {formatDuration(task.totalSeconds)}</div>

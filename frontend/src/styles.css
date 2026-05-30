@@ -61,23 +61,42 @@ button:disabled {
 .task-form input,
 .task-form select {
   width: 100%;
-  min-height: 44px;
-  border: 1px solid #d6dce8;
-  border-radius: 8px;
-  background: white;
+  min-height: 48px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  background: #ffffff;
   color: #172033;
-  padding: 0 12px;
+  padding: 0 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-form select {
+  font-weight: 600;
+}
+
+.task-form input:focus,
+.task-form select:focus {
+  outline: none;
+  border-color: #447f98;
+  box-shadow: 0 0 0 3px rgba(68, 127, 152, 0.15);
 }
 
 .task-form button,
 .secondary-button {
-  min-height: 44px;
+  min-height: 48px;
   border: 0;
-  border-radius: 8px;
-  background: #2364d2;
+  border-radius: 12px;
+  background: #1f5f7a;
   color: white;
   font-weight: 700;
-  padding: 0 16px;
+  padding: 0 20px;
+  box-shadow: 0 6px 16px rgba(31, 95, 122, 0.3);
+  transition: all 0.25s ease;
+}
+
+.task-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(68, 127, 152, 0.35);
 }
 
 .secondary-button {
@@ -114,9 +133,10 @@ button:disabled {
 .column {
   min-height: 420px;
   border: 1px solid #d8deea;
-  border-radius: 8px;
+  border-radius: 14px;
   background: #ffffff;
-  padding: 14px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(23, 32, 51, 0.04);
 }
 
 .column-header {
@@ -148,10 +168,16 @@ button:disabled {
 }
 .task-card {
   border: 1px solid #dde3ef;
-  border-radius: 8px;
-  background: #fbfcff;
-  padding: 12px;
-  box-shadow: 0 8px 20px rgba(23, 32, 51, 0.06);
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 14px;
+  box-shadow: 0 8px 20px rgba(23, 32, 51, 0.08);
+  transition: all 0.25s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(23, 32, 51, 0.12);
 }
 
 .task-card:active {
@@ -262,16 +288,36 @@ button:disabled {
   flex-wrap: wrap;
 }
 
-.task-actions button {
+.status-button {
   border: none;
-  border-radius: 8px;
-  background: #2364d2;
-  color: white;
-  padding: 7px 12px;
-  font-size: 0.8rem;
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
   font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
-.task-actions button:hover {
-  opacity: 0.9;
+.status-button:hover {
+  transform: translateY(-2px);
+}
+
+.status-button:active {
+  transform: translateY(0);
+}
+
+.todo-button {
+  background: #64748b;
+  color: white;
+}
+
+.progress-button {
+  background: #447f98;
+  color: white;
+}
+
+.complete-button {
+  background: #2c5f7a;
+  color: white;
 }
